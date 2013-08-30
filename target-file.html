@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Load External Content</title>
+
+<!--load jquery!-->
+  
+   <script src="jquery.js"></script>
+	
+	<!--end jquery load-->
+	
+	<!--script that will call your separate html content - externalContent.html-->
+	<script>
+    $(function(){
+      $("#includedContent").load("externalContent.html"); 
+    });
+    </script> 
+	
+	<!--end load separate html file-->
+
+
+</head>
+
+<body> 
+<!--include the following div with id that's noted in the above script - includedContent-->
+     <div id="includedContent"></div>
+	 <!--end div id include-->
+</body>
+</html>
